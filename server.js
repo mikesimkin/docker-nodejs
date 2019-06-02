@@ -10,6 +10,7 @@ var i = 0;
 const app = express();
 app.get('/', (req, res) => {
   res.send(`Hello world ${i}\n`);
+  i++;
 });
 
 app.listen(PORT, HOST);
